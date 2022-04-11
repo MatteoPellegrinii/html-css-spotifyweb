@@ -5,7 +5,7 @@
     overflow-y: hidden;
 }
 body{
-    max-height: 100vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +29,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    filter: opacity(0.9);
 }
 .upgrade{
     margin-right: 10px;
@@ -40,6 +39,7 @@ header{
 }
 header a{
     color: white;
+    display: block;
 }
 
 /* main */
@@ -51,8 +51,6 @@ main{
     height: calc(100vh - 70px);
     background-color: black;
     z-index: 20;
-    display: flex;
-    flex-direction: column;
     color: #a3a3a3;
     position: relative;
 }
@@ -96,7 +94,7 @@ main{
     font-size: 20px;
     margin-right: 10px;
 }
-.overflow:hover{
+.overflow{
     overflow-y: scroll;
 }
 .icon{ 
@@ -105,15 +103,12 @@ main{
     filter: opacity(0.5);
 }
 .menufoot{
-    position: absolute;
-    bottom: 0px;
-    left: 0;
     margin-left: 20px;
-    width: 80%;
+    width: 180px;
     background-color: black;
-    z-index: 10;
-    height: 70px;
-    
+    position: fixed;
+    bottom: 70px;
+    left: 0;
 }
 .download{
     font-size: 10px;
@@ -139,22 +134,45 @@ main{
 
 
 .mainpart{
-    padding-top: 70px;
+    margin-top: 70px;
     width: calc(100% - 200px);
     background-color: #141922;
     overflow-y: scroll;
+    padding-left: 20px;
+    margin-bottom: 70px;
 }
 .mainpart nav{
     width: 100%;
-    /* debug */
-    height: 100px;
-    border: solid 1px black;
+}
+.mainpart nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+.mainpart nav ul li{
+    padding: 8px;
+}
+.mainpart nav ul li a{
+    color: #a3a3a3;
+}
+h2{
+    font-size: 25px;
+    margin-top: 15px;
 }
 .mainpart .row{
     width: 100%;
-    /* debug */
-    height: 300px;
-    border: solid 1px black;
+    margin-top: 15px;
+    display: flex;
+}
+.colonna{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+.row img{
+    width: 100%;
 }
 
 
@@ -162,7 +180,7 @@ main{
 footer{
     height: 70px;
     width: 100%;
-    background-color: blue;
+    background-color: #282828;
     position: fixed;
     bottom: 0;
     left: 0;
