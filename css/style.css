@@ -94,9 +94,6 @@ main{
     font-size: 20px;
     margin-right: 10px;
 }
-.overflow{
-    overflow-y: scroll;
-}
 .icon{ 
     margin-right: 5px;
     height: 25px;
@@ -104,7 +101,7 @@ main{
 }
 .menufoot{
     margin-left: 20px;
-    width: 180px;
+    width: 160px;
     background-color: black;
     position: fixed;
     bottom: 70px;
@@ -171,8 +168,14 @@ h2{
     align-items: center;
     margin-right: 20px;
 }
+.colonna:hover{
+    cursor: pointer;
+}
 .row img{
     width: 100%;
+}
+.rounded{
+    border-radius: 50%;
 }
 
 
@@ -185,4 +188,29 @@ footer{
     bottom: 0;
     left: 0;
     z-index: 30;
+    display: flex;
+}
+.playimage{
+    height: 40px;
+}
+footer div{
+    display: flex;
+    align-items: center;
+}
+.asidefoot{
+    width: 25%;
+    padding: 0 15px;
+}
+.midfoot{
+    width: 50%;
+}
+.play{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    font-size: xx-small;
+    align-items: flex-start;
+}
+.play div{
+    color: #a3a3a3;
 }
