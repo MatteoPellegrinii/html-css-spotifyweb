@@ -11,10 +11,13 @@ body{
     flex-direction: column;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
 }
 a{
     text-decoration: none;
-    color: white;
+}
+ul{
+    list-style-type: none;
 }
 /* header */
 header{
@@ -26,6 +29,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    filter: opacity(0.9);
 }
 .upgrade{
     margin-right: 10px;
@@ -33,6 +37,9 @@ header{
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 11px;
+}
+header a{
+    color: white;
 }
 
 /* main */
@@ -42,9 +49,41 @@ main{
 .leftmenu{
     width: 200px;
     height: calc(100vh - 70px);
-    background-color: red;
+    background-color: black;
     z-index: 20;
+    display: flex;
+    flex-direction: column;
+    color: #a3a3a3;
 }
+.leftmenu img{
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.leftmenu nav{
+    margin-top: 15px;
+}
+.leftmenu li{
+    text-decoration: none;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.leftmenu h4{
+    margin-top: 30px;
+    padding-left: 20px;
+}
+.leftmenu a{
+    color: #a3a3a3;
+    display: flex;
+    align-items: center;
+}
+.leftmenu i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+
 .mainpart{
     padding-top: 70px;
     width: calc(100% - 200px);
@@ -73,5 +112,5 @@ footer{
     position: fixed;
     bottom: 0;
     left: 0;
-    z-index: 20;
+    z-index: 30;
 }
