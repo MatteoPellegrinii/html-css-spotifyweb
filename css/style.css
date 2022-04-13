@@ -25,11 +25,12 @@ header{
     width: 100%;
     height: 60px;
     position: fixed;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.671);
     z-index: 10;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    filter: opacity(0.9);
 }
 .upgrade{
     margin-right: 10px;
@@ -37,6 +38,7 @@ header{
     padding: 10px 20px;
     border-radius: 20px;
     font-size: 9px;
+    margin-right: 30px;
 }
 .upgrade:hover{
     font-size: 14px;
@@ -155,7 +157,7 @@ main{
 
 
 .mainpart{
-    margin-top: 60px;
+   padding-top: 60px;
     width: calc(100% - 200px);
     background-color: #141922;
     overflow-y: scroll;
