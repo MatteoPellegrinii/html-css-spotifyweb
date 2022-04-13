@@ -394,7 +394,7 @@ footer .fa-play{
         width: 40px;
     }
     .mainpart{
-        width: calc(100% - 50px);
+        width: calc(100% - 40px);
     }
     .notoverflw, .overflow, .menufoot{
         display: none;
