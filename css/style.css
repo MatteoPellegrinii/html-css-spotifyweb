@@ -239,7 +239,7 @@ h2{
     padding-left: 8px;
 }
 .colonna img:hover{
-    filter: opacity(0.3);
+    filter: opacity(0.5);
 }
 .colonna img:hover + .playmain{
     display: flex;
@@ -388,7 +388,7 @@ footer .fa-play{
 .menufootshort{
     display: none;
 }
-.midfoot i:hover{
+.midfoot a:last-child:hover{
     animation: rotate 2s;
 }
 .battito:hover{
