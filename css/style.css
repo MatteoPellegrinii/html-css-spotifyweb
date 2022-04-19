@@ -389,10 +389,25 @@ footer .fa-play{
     display: none;
 }
 .midfoot i:hover{
-    animation: rotate 5s;
+    animation: rotate 2s;
+}
+.battito:hover{
+    animation: infinite;
+    animation-name: battito;
+    animation-duration: 2s;
 }
 
-
+@keyframes battito{
+    10%{
+        font-size: 18px;
+    }
+    50%{
+        font-size: 14px;
+    }
+    90%{
+        font-size: 18px;
+    }
+}
 @keyframes rotate {
     100%{
         transform: rotate(360deg);
