@@ -415,7 +415,7 @@ footer .fa-play{
 }
 
 @media screen and (min-width:700px) and (max-width:1200px){
-.row{
+.long{
     flex-wrap: wrap;
     height: 199px;
 }
@@ -425,7 +425,7 @@ footer .fa-play{
 }
 
 @media screen and (max-width:700px){
-    .row{
+    .long{
         flex-wrap: wrap;
     }
     .colonna{
@@ -479,7 +479,6 @@ footer .fa-play{
     }
     .overflow{
         display: none;
-    
     }
     header{
         display: none;
